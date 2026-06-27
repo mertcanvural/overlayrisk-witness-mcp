@@ -1,6 +1,7 @@
 {
   "name": "overlayrisk-witness-mcp",
   "version": "0.1.0",
+  "mcpName": "io.github.mertcanvural/overlayrisk-witness",
   "description": "Model Context Protocol server for OverlayRiskWitness — run the free independent before/after accessibility-overlay witness (accessiBe / UserWay) on any public URL.",
   "license": "MIT",
   "author": "Mert Can Vural",
