@@ -1,0 +1,20 @@
+# Smithery configuration — https://smithery.ai/docs
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      overlayriskApiUrl:
+        type: string
+        title: Witness API URL
+        description: Override the hosted witness endpoint. Leave blank to use the public default.
+        default: https://overlayrisk.com/api/witness
+    required: []
+  commandFunction: |
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'overlayrisk-witness-mcp'],
+      env: config.overlayriskApiUrl
+        ? { OVERLAYRISK_API_URL: config.overlayriskApiUrl }
+        : {}
+    })
