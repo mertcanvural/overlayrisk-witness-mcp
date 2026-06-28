@@ -1,18 +1,16 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.mertcanvural/overlayrisk-witness",
-  "description": "Run the free independent before/after accessibility-overlay witness (accessiBe / UserWay) on any public URL — returns one documented finding where the page's public ADA/WCAG claims don't hold up, with a timestamp.",
-  "status": "active",
+  "description": "Independent before/after accessibility-overlay (accessiBe/UserWay) witness for any public URL.",
+  "version": "0.1.0",
   "repository": {
     "url": "https://github.com/mertcanvural/overlayrisk-witness-mcp",
     "source": "github"
   },
-  "version": "0.1.0",
   "websiteUrl": "https://overlayrisk.com",
   "packages": [
     {
       "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "overlayrisk-witness-mcp",
       "version": "0.1.0",
       "transport": {
@@ -22,6 +20,7 @@
         {
           "name": "OVERLAYRISK_API_URL",
           "description": "Override the hosted witness endpoint (defaults to https://overlayrisk.com/api/witness).",
+          "format": "string",
           "isRequired": false,
           "isSecret": false
         }
